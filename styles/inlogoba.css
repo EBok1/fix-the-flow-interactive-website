@@ -1,0 +1,91 @@
+/* Fonts being used by the oba */
+@font-face {
+    font-family: AvenirRoman;
+    src: url(../fonts/Avenir-roman.ttf);
+}
+
+@font-face {
+    font-family: AvenirMedium;
+    src: url(../fonts/Avenir-medium.ttf);
+}
+
+@font-face {
+    font-family: AvenirBlack;
+    src: url(../fonts/Avenir\ -black.ttf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-family: 'Poppins', sans-serif; */
+}
+
+body {
+    /* background-color: #E4E9F7; */
+    font-family: AvenirMedium;
+}
+
+body img {
+    /* margin: 0.5em; */
+}
+
+h1 {
+    text-align: center;
+}
+
+.profielen {
+    text-align: center;
+
+    display: flex;
+    justify-content: center;
+
+}
+ 
+/* door flex wrap komen de list items onder elkaar te staan als deze niet meer op de pagina passen */
+ul {    
+    list-style: none;
+    display:flex; 
+    flex-wrap: wrap;
+    justify-content: center;
+    height: fit-content;
+    column-gap: 1em;
+    row-gap: 1em;
+    padding: 1em; 
+}
+
+li {
+    /* padding: 1em; */
+    /* margin: 1em; */
+
+    /* display: inline; */
+    /* text-align: center; */
+}
+
+li a {
+    display: flex;
+    flex-direction: column-reverse;
+    text-decoration: none;
+    background-color: #F6F5FF;
+    width: 10em;
+    padding: 1em;
+}
+
+li a h2 {
+
+}
+
+li a img {
+    width:100%;
+    max-width: 10em;
+    border-radius: 50%;
+}
+
+/* zorgt ervoor dat wanneer de pagina groter wordt dan 30em de ruimte tussen de colommen en rijen groter wordt */
+@media (width > 30em) {
+    ul{
+        column-gap: 2em;
+        row-gap: 2em;
+        max-width: 48em; /* rijen worden niet breeder dan 48em */ 
+    }
+}
