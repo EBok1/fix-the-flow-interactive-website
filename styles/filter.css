@@ -309,7 +309,7 @@ body.dark .mode .sun-moon i.moon{
     opacity: 0;
 }
 
-/* .menu-bar .bottom-content .toggle-switch{
+.menu-bar .bottom-content .toggle-switch{
     position: absolute;
     right: 0;
     height: 100%;
@@ -340,7 +340,7 @@ body.dark .mode .sun-moon i.moon{
     transform: translateY(-50%);
     background-color: var(--sidebar-color);
     transition: var(--tran-04);
-} */
+}
 
 body.dark .switch::before{
     left: 20px;
@@ -464,6 +464,9 @@ h1{
 }
 
 /* buttons genres */
+.hide {
+    display: none;
+}
 main #romanbook{
     padding: .3em;
     margin: var(--margin);
@@ -474,7 +477,7 @@ main #romanbook{
     border-style: none;
 }
 
-button.like i{
+button.search i{
     background-color: white;
 }
 

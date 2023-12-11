@@ -23,7 +23,31 @@ modeSwitch.addEventListener("click" , () =>{
     }
 });
 
+const genres = document.querySelectorAll('.genre')
+const genreButtons = document.querySelectorAll('.genre-button')
 
+genreButtons.forEach((genreButton) => {
+    genreButton.addEventListener('click', filterGenres)
+})
+
+function filterGenres (event) {
+    genres.forEach((genre) => {
+        genre.classList.add('hide')
+    })
+    const genre = document.querySelector('.genre.' + event.target.id)
+    console.log(genre)
+    genre.classList.remove('hide') //zo hide je alle sections 
+}
+
+// inline geschreven, hiermee hide je alle genres behalve 1 
+document.querySelector('.genre-all').addEventListener('click', () => {
+    genres.forEach((genre) => {
+        genre.classList.remove('hide') 
+    })
+})
+
+
+// like button op detail pagina
 const likeButton = document.querySelector('#hartje');
 function likeBoek() {
     likeButton.classList.toggle('like'); 
@@ -32,20 +56,10 @@ likeButton.addEventListener('click', likeBoek);
 
 
 
-const filterRoman = document.querySelector('#romanbook');
-filterRoman.addEventListener('click', zoekRoman);
-function zoekRoman(){
-    filterRoman.classList.toggle('like')
-}
-
-
-
-
-// filter systeem 
-// const filterThriller = document.querySelector('#thriller');
-
-// function zoekThriller() {
-//     filterThriller.classList.toggle('like'); 
+// const filterRoman = document.querySelector('#romanbook');
+// function zoekRoman(){
+//     filterRoman.classList.toggle('search')
 // }
+// filterRoman.addEventListener('click', zoekRoman);
 
-// filterThriller.addEventListener('click', zoekThriller); 
+
