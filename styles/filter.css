@@ -477,8 +477,83 @@ main #romanbook{
     border-style: none;
 }
 
-button.search i{
-    background-color: white;
+#roman:hover{
+    cursor: pointer;
+    background-color: rgb(158, 6, 92);
+}
+
+button {
+    padding: .3em 1em .3em 1em;
+    margin-left: var(--margin);
+    font-size: var(--font-size);
+    background-color: rgb(230, 0, 130);
+    border-radius: 20%;
+    width: fit-content;
+    border-style: none;
+}
+
+#thriller {
+    background-color: rgb(75, 170, 50);
+}
+
+#thriller:hover{
+    cursor: pointer;
+    background-color: rgb(51, 114, 34);
+}
+
+#biografie {
+    background-color: rgb(180, 200, 0);
+}
+
+#biografie:hover{
+    cursor: pointer;
+    background-color: rgb(123, 136, 5);
+}
+
+#misdaad{
+    background-color: rgb(90, 60, 160);
+}
+
+#misdaad:hover{
+    cursor: pointer;
+    background-color: rgb(62, 42, 110);
+}
+
+#fantasie{
+    background-color: rgb(0, 150, 230);
+}
+
+#fantasie:hover{
+    cursor: pointer;
+    background-color: rgb(6, 120, 181);
+}
+
+#kinder{
+    background-color: rgb(255, 160, 0);
+}
+
+#kinder:hover{
+    cursor: pointer;
+    background-color: rgb(175, 111, 2);
+}
+
+
+.search-box1{
+    background-color: var(--primary-color-light);
+    margin: 1em;
+    padding: 1em;
+    border-style: none;
+    width: 30em;
+}
+
+.search-box1 > i{
+    font-size: 2em;
+}
+
+.search-box1 > input{
+    background-color: var(--primary-color-light);
+    border-style: none;
+    font-size: 2em;
 }
 
 main #thrillerbook{
@@ -604,53 +679,55 @@ main ul{
 }
 
 
-li{
+.home li {
+    list-style: none;
     background-color: var(--primary-color-light);
 }
 
-main ul.book-list1 {
-    list-style: none;
-    background-color: rgba(230, 0, 130, 0.309);
+main ul{
+    padding: 1em;
     margin: var(--margin); 
+}
+
+main ul.book-list1 {
+    background-color: rgba(230, 0, 130, 0.309);
 }
 
 main ul.book-list2 {
-    list-style: none;
     background-color: rgba(76, 170, 50, 0.309);
-    margin: var(--margin); 
 }
 
 main ul.book-list3 {
-    list-style: none;
     background-color: rgba(180, 200, 0, 0.309);
-    margin: var(--margin); 
 }
 
 main ul.book-list4 {
-    list-style: none;
     background-color: rgba(90, 60, 160, 0.309);
-    margin: var(--margin); 
 }
 
 main ul.book-list5 {
-    list-style: none;
-    background-color: rgba(0, 150, 230, 0.309);
-    margin: var(--margin); 
+    background-color: rgba(0, 150, 230, 0.309); 
 }
 
 main ul.book-list6 {
-    list-style: none;
-    background-color: rgba(255, 160, 0, 0.309);
-    margin: var(--margin); 
+    background-color: rgba(255, 160, 0, 0.309); 
 }
 
 #book-img{
-    max-width: 10em;
+    width: 10em;
+    height: 14em;
     padding: var(--margin);
 }
 
+a {
+    background-color: #F6F5FF;
+    text-decoration: none;
+    color: black;
+}
 
-
+h3{
+    margin: var(--margin)
+}
 
 
 
